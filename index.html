@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW X6</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <script src="./js/blockScroll.js" defer></script>
+    <script src="./js/accordion.js" defer></script>
+    <script src="./js/smoothScroll.js" defer></script>
+    <script src="./js/tabs.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/sendForm.js" defer></script>
+  </head>
+  <body>
+    <!-- header (start) -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-main">
+            <a href="#" class="logo header__logo">
+              <img src="img/logo.svg" alt="Logo: BMW X6" class="logo__img" />
+            </a>
+            <!-- /.logo -->
+            <nav class="menu">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#design" class="menu-list__link"> Design </a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#feature" class="menu-list__link"> Features </a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#" class="menu-list__link"> Dealer network </a>
+                </li>
+                <li class="menu-list__item">
+                  <a href="#contacts" class="menu-list__link"> Test drive </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.menu -->
+          </div>
+          <!-- /.header-main -->
+          <a href="tel:88005437809" class="phone"> 8 800 543 78 09 </a>
+          <button class="humburger-menu" aria-label="Burger menu"></button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+    </header>
+    <!-- header (end) -->
+
+    <!-- main (start) -->
+    <section class="main" id="main">
+      <div class="container">
+        <div class="main-wrapper">
+          <div class="offer">
+            <h1 class="main__title">BMW X6</h1>
+            <p class="main__descr">Striking appearance and impressive functionality</p>
+            <a href="#contacts" type="button" class="button main__button"> Test-drive </a>
+            <a href="#design" class="main__scroll" aria-label="to the next screen"></a>
+          </div>
+          <!-- /.offer -->
+          <div class="main-img">
+            <a href="https://youtu.be/dkrFZSWyklU" class="play"> Watch the video </a>
+          </div>
+        </div>
+        <!-- /.main-wrapper -->
+      </div>
+    </section>
+    <!-- main (end) -->
+
+    <!-- design (start) -->
+    <section class="section design" id="design">
+      <div class="container">
+        <div class="design-wrapper">
+          <div class="design-block">
+            <img
+              src="img/car/image-5.png"
+              alt="BMW X6"
+              class="feature__img design-block__img"
+              data-tabs-field="interior" />
+            <img
+              src="img/car/image-4.png"
+              alt="BMW X6"
+              class="feature__img design-block__img hidden"
+              data-tabs-field="body" />
+            <div class="design-text">
+              <h2 class="section__title design__title">Comfort in detail</h2>
+              <h2 class="section__title design__title hidden">Attracts the eyes</h2>
+              <ul class="design-list">
+                <li>
+                  <button
+                    type="button"
+                    class="design-list__item design-list__item_active"
+                    data-tabs-handler="interior">
+                    Interior design
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="design-list__item" data-tabs-handler="body">
+                    Body design
+                  </button>
+                </li>
+              </ul>
+              <!-- /.design-list -->
+              <ul>
+                <li class="design__descr" data-tabs-field="interior">
+                  <p class="design__description-text">
+                    Contour lighting in the front and rear doors creates in the car interior a cozy
+                    and relaxing environment. Crystal details are built into the lever handle
+                    selector, volume control. Panoramic glass roof gives a feeling incredible space
+                    during the day, and at night creates a special atmosphere in the cabin.
+                  </p>
+                  <button class="more">— To learn more</button>
+                </li>
+                <li class="design__descr hidden" data-tabs-field="body">
+                  <p class="design__description-text">
+                    Wide. Dynamic. Muscular. The updated BMW X6 combines solidity X series with a
+                    sports coupe. Resolute front with wide the air intakes clearly hint at what
+                    power is hidden under the hood. The large double radiator grille of the sports
+                    uniform highlights athleticism the car. Enhance the impression of BMW branded
+                    dual headlights and wide extended fog lights.
+                  </p>
+                  <button class="more">— To learn more</button>
+                </li>
+              </ul>
+            </div>
+            <!-- /.design-text -->
+          </div>
+          <!-- /.design-block -->
+          <ul>
+            <li class="design-images" data-tabs-field="interior">
+              <img src="img/design/interior01.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/interior02.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/interior03.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/interior04.jpg" alt="BMW X6" class="design__img" />
+            </li>
+            <li class="design-images hidden" data-tabs-field="body">
+              <img src="img/design/body01.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/body02.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/body03.jpg" alt="BMW X6" class="design__img" />
+              <img src="img/design/body04.jpg" alt="BMW X6" class="design__img" />
+            </li>
+          </ul>
+        </div>
+        <!-- /.design-wrapper -->
+      </div>
+    </section>
+    <!-- design (end) -->
+
+    <!-- feature (start) -->
+    <section class="section feature" id="feature">
+      <div class="container">
+        <div class="feature-wrapper">
+          <div class="feature-block">
+            <h2 class="section__title feature__title">Technical specifications</h2>
+            <ul class="feature-list">
+              <li class="feature__item">
+                <button type="button" class="feature__link">
+                  <div class="feature-item-wrap">
+                    <span class="feature-item__title"> Specification </span>
+                  </div>
+                </button>
+                <!-- /.feature__link -->
+                <ul class="feature-sub hidden">
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Maximum speed </span>
+                    <span class="feature-sub__value"> 250 km/h </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Fuel consumption </span>
+                    <span class="feature-sub__value"> 9.7 l </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Weight </span>
+                    <span class="feature-sub__value"> 2.245 kg </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Acceleration to hundreds </span>
+                    <span class="feature-sub__value"> 4.8 seconds </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Drive </span>
+                    <span class="feature-sub__value"> Full </span>
+                  </li>
+                </ul>
+                <!-- /.feature-list-sub -->
+              </li>
+              <li class="feature__item">
+                <button type="button" class="feature__link">
+                  <div class="feature-item-wrap">
+                    <span class="feature-item__title"> Engine </span>
+                  </div>
+                </button>
+                <ul class="feature-sub hidden">
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Engine </span>
+                    <span class="feature-sub__value"> Petrol </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Power </span>
+                    <span class="feature-sub__value"> 450 hp. </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Engine torque </span>
+                    <span class="feature-sub__value"> 650 N·m </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Engine capacity </span>
+                    <span class="feature-sub__value"> 4395 cm3 </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="feature__item">
+                <button type="button" class="feature__link">
+                  <div class="feature-item-wrap">
+                    <span class="feature-item__title"> Driving qualities </span>
+                  </div>
+                </button>
+                <ul class="feature-sub hidden">
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Ground clearance </span>
+                    <span class="feature-sub__value"> 212 mm </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Anti-lock system </span>
+                    <span class="feature-sub__value"> ABS </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Stabilization system </span>
+                    <span class="feature-sub__value"> ESP </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Descent assistance system </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name">
+                      The system of assistance when starting up the mountain
+                    </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="feature__item">
+                <button type="button" class="feature__link">
+                  <div class="feature-item-wrap">
+                    <span class="feature-item__title"> Comfort </span>
+                  </div>
+                </button>
+                <ul class="feature-sub hidden">
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Climate control </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> On-board computer </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Light and rain sensor </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Multimedia with touch screen </span>
+                    <span class="feature-sub__value"> Apple CarPlay и Android Auto </span>
+                  </li>
+                  <li class="feature-sub__item">
+                    <span class="feature-sub__name"> Height adjustment of the driver's seat </span>
+                    <span class="feature-sub__value"> + </span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.feature-list -->
+          </div>
+          <!-- /.feature-block -->
+        </div>
+        <!-- /.feature-wrapper -->
+      </div>
+    </section>
+    <!-- feature (end) -->
+
+    <!-- contacts (start) -->
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="contacts-wrapper">
+          <div class="contacts-form">
+            <h2 class="section__title">Application for a test drive</h2>
+            <p class="contacts__descr">
+              Leave your contacts. We will contact you and invite you for a test drive at a
+              convenient time for you time
+            </p>
+            <form class="form form-test-drive">
+              <input type="text" class="input" name="name" placeholder="Name" />
+              <input type="mail" class="input" name="mail" placeholder="Email" />
+              <input type="text" class="input" name="phone" placeholder="Telephone" />
+              <button type="submit" class="button form__button">Send</button>
+            </form>
+          </div>
+          <!-- /.contacts-form -->
+        </div>
+        <!-- /.contacts-wrapper -->
+      </div>
+    </section>
+    <!-- contacts (end) -->
+
+    <!-- modal (start) -->
+    <div class="modal hidden">
+      <div class="overlay"></div>
+      <div class="modal-wrapper">
+        <h2 class="section__title modal__title">Detailed description of the complete sets</h2>
+        <p class="modal__descr">
+          Leave the email address to which you want to receive the document with the description
+          complete sets
+        </p>
+        <button type="button" class="modal__close" aria-label="close the modal window"></button>
+        <form class="form modal__form">
+          <input type="text" name="name" class="input modal__input" placeholder="Name" />
+          <input type="mail" name="mail" class="input modal__input" placeholder="Email" />
+          <div class="modal-buttons">
+            <button type="submit" class="button modal__button">Send</button>
+          </div>
+        </form>
+        <!-- /.form modal__form -->
+      </div>
+    </div>
+    <!-- modal (end) -->
+  </body>
+</html>
